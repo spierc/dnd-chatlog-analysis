@@ -6,3 +6,9 @@ insists that he is allows shafted with poor rolls (ie, rolls near or on the numb
 to see if Roll20 really does hate my friend or not.
 
 This is for you Dave.
+
+###Alterations to the data (done for easier parsing):
+grep -o "http.*" IXChats_orig.txt > IXChats_weblinks.txt 
+grep -v "http.*" IXChats_orig.txt > IXChats_nolinks.txt
+sed '/Roll:/!s/: /:\n/g' IXChats_nolinks.txt > IXChats_final.txt #add a newline to places after the ":", except for if it is "Roll:"
+
