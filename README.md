@@ -7,7 +7,7 @@ to see if Roll20 really does hate my friend or not.
 
 This is for you Dave.
 
-##Alterations to the data (done for easier parsing):
+#### Alterations to the data (done for easier parsing):
 
 grep -o "http.*" IXChats_orig.txt > IXChats_weblinks.txt 
 
